@@ -1,0 +1,25 @@
+{
+  "name": "cli",
+  "version": "0.0.1",
+  "description": "cli tool",
+  "dependencies": {
+    "optimist": "~0.6.1"
+  },
+  "devDependencies": {
+    "jasmine-node": "~2.0.0-beta4",
+    "jshint": "~2.5.0"
+  },
+  "scripts": {
+    "pretest": "./node_modules/jshint/bin/jshint bin lib package.json spec",
+    "test": "./node_modules/jasmine-node/bin/jasmine-node spec"
+  },
+  "bin": {
+    "cli": "./bin/cli"
+  },
+  "author": "Kazuki Suda",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/superbrothers/node-cli-sample"
+  }
+}
